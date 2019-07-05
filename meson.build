@@ -7,7 +7,10 @@ else
   extra_args = []
 endif
 
-srcs = ['src/nanostdio.c']
+srcs = [
+    'src/nanostdio.c'
+  , 'src/nanoassert.c'
+  ]
 incdir = include_directories('include')
 
 static_library( 'nanolibc', srcs,

@@ -5,7 +5,11 @@
 extern "C" {
 #endif
 
-int printf(const char *format, ...);
+int nanoprintf(const char *format, ...);
+int nanoputs(const char *str);
+
+#define printf nanoprintf
+#define puts nanoputs
 
 #ifdef __cplusplus
 } // extern C

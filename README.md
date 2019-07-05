@@ -19,25 +19,128 @@
 ### C90
 
 * nanoassert.h
+  * [ ] assert
 * nanoctype.h
+  * [ ] isalnum
+  * [ ] isalpha
+  * [ ] isblank
+  * [ ] iscntrl
+  * [ ] isdigit
+  * [ ] isgraph
+  * [ ] islower
+  * [ ] isprint
+  * [ ] ispunct
+  * [ ] isspace
+  * [ ] isupper
+  * [ ] isxdigit
 * nanoerrono.h
-* nanofloat.h
-* nanoiso646.h
-* nanolimits.h
-* nanolocale.h
-* nanosetjmp.h
-* nanosignal.h
-* nanostdarg.h
-* nanostddef.h
+  * [ ] errno
+* [ ] nanofloat.h
+* [ ] nanoiso646.h
+* [ ] nanolimits.h
+* [ ] nanolocale.h
+* [ ] nanosetjmp.h
+* [ ] nanosignal.h
+* [ ] nanostdarg.h
+* [ ] nanostddef.h
 * nanostdio.h
+  * [ ] remove
+  * [ ] rename
+  * [ ] tmpfile
+  * [ ] tmpnam
+  * [ ] fclose
+  * [ ] fflush
+  * [ ] fopen
+  * [ ] freopen
+  * [ ] setbuf
+  * [ ] setvbuf
+  * [ ] fprintf
+  * [ ] fscanf
   * [x] printf
+  * [ ] scanf
+  * [ ] snprintf
+  * [ ] sprintf
+  * [ ] sscanf
+  * [ ] vfprintf
+  * [ ] vfscanf
+  * [ ] vprintf
+  * [ ] vscanf
+  * [ ] vsnprintf
+  * [ ] vsprintf
+  * [ ] vsscanf
+  * [ ] fgetc
+  * [ ] fgets
+  * [ ] fputc
+  * [ ] fputs
+  * [ ] getc
+  * [ ] getchar
+  * [ ] gets
+  * [ ] putc
+  * [ ] putchar
+  * [ ] puts
+  * [ ] ungetc
+  * [ ] fread
+  * [ ] fwrite
+  * [ ] fgetpos
+  * [ ] fseek
+  * [ ] fsetpos
+  * [ ] ftell
+  * [ ] rewind
+  * [ ] clearerr
+  * [ ] feof
+  * [ ] ferror
+  * [ ] perror
 * nanostdlib.h
+  * [ ] atof
+  * [ ] atoi
+  * [ ] atol
+  * [ ] atoll(C++11)
+  * [ ] strtod
+  * [ ] strtof(C++11)
+  * [ ] strtol
+  * [ ] strtold(C++11)
+  * [ ] strtoll(C++11)
+  * [ ] strtoul
+  * [ ] strtoull(C++11)
 * nanostring.h
+  * [ ] memcpy
+  * [ ] memmove
+  * [ ] strcpy
+  * [ ] strncpy
+  * [ ] strcat
+  * [ ] strncat
+  * [ ] memcmp
+  * [ ] strcmp
+  * [ ] strcoll
+  * [ ] strncmp
+  * [ ] strxfrm
+  * [ ] memchr
+  * [ ] strchr
+  * [ ] strcspn
+  * [ ] strpbrk
+  * [ ] strchr
+  * [ ] strspn
+  * [ ] strstr
+  * [ ] strtok
+  * [ ] memset
+  * [ ] sterror
+  * [ ] strlen
+  * [ ] NULL
 * nanotime.h
 
 ### C11
 
-T.B.W.
+* [ ] fenv.h
+* [ ] inttypes.h
+* [ ] stdbool.h
+* [ ] stdint.h
+* [ ] tgmath.h
+* [ ] uchar.h
+
+### Wide characters
+
+* [ ] wchar.h
+* [ ] wctype.h
 
 ### libm
 

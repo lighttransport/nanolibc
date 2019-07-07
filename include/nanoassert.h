@@ -13,8 +13,14 @@
 extern "C" {
 #endif
 
+#if defined(_MSC_VER)
+#define NANOLIBC_NORETURN
+#else
+#define NANOLIBC_NORETURN _Noreturn
+#endif
+
 // _Noreturn = C11 keyword
-_Noreturn void __nanoassert_fail(const char *, const char *, int, const char *);
+NANOLIBC_NORETURN void __nanoassert_fail(const char *, const char *, int, const char *);
 
 #ifdef __cplusplus
 } // extern C

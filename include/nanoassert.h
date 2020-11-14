@@ -6,7 +6,18 @@
 #ifdef NDEBUG
 #define assert(x) (void)0
 #else
+#ifdef _MSC_VER
+
+extern void _assert(
+   char const* message,
+   char const* filename,
+   unsigned line
+);
+
+#define assert(x) ((void)((x) || (_assert(#x, __FILE__, __LINE__), 0)))
+#else
 #define assert(x) ((void)((x) || (__nanoassert_fail(#x, __FILE__, __LINE__, __func__), 0)))
+#endif
 #endif
 
 #ifdef __cplusplus

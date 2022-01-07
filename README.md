@@ -137,6 +137,13 @@
 * [ ] tgmath.h
 * [ ] uchar.h
 
+### Threads
+
+* [ ] threads.h
+  * [ ] Win32 thread
+  * [ ] posix thread
+  * [ ] OS-specific thread
+
 ### Wide characters
 
 * [ ] wchar.h
@@ -174,3 +181,5 @@ MIT license.
 ### Third party licenses
 
 musl : MIT license.
+libs/thread.h : MIT license or public domain https://github.com/mattiasgustavsson/libs
+nanoprintf : Public domain https://github.com/charlesnicholson/nanoprintf

@@ -171,7 +171,8 @@ $ ninja
 
 ## TODO
 
-Support compilation on C89 compiler.
+* [ ] Support compilation on C89 compiler.
+* [ ] WASI support.
 
 
 ## License

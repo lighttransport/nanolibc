@@ -2,7 +2,14 @@
 
 `nanolibc` is a small subset of standard C library(libc) implementation.
 
-`nanolibc`'s primal usage is for embedded C programs and adding cross-platform JIT compilation of C/C++ application to your C/C++ application(MSVC, Linux, macOS)
+`nanolibc`'s primal usage is for embedded C programs, secure C/C++ programs, multithreaded C/C++ programs, and adding cross-platform JIT compilation of C/C++ application to your C/C++ application(MSVC, Linux, macOS)
+
+## Design direction
+
+* May not implement legacy, unsecure functions(`fopen`, `wordexp`, ...)
+* No global state as much as possible(e.g. no global error code)
+* Functions withi interacts with system will be not implemented or no-op(e.g. `system()`, `abort()`, `sbrk()`, `execve()`)
+
 
 ## Requirements
 
@@ -10,8 +17,8 @@
 
 ## Supported platform
 
-* Windows(MSVCRT) : Most of libc functions are deligated to the function in MSVCRT.
-* Linux : Use musl implementation.
+* Windows(MSVCRT/uCRT) : Most of libc functions are deligated to the function in MSVCRT/uCRT.
+* Linux : Use musl implementation, llvm libc.
 * macOS : T.B.D.
 
 ## Supported functions
@@ -144,8 +151,7 @@
 
 ### libm
 
-* MSVCRT: Use MSVCRT's math implementation
-
+T.B.W.
 
 ## Build samples/tests
 

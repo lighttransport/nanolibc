@@ -169,6 +169,20 @@ $ cd build
 $ ninja
 ```
 
+#### cross-compile with llvm-mingw
+
+Get llvm-mingw prebuild from
+
+https://github.com/mstorsjo/llvm-mingw
+
+We recommend to use uCRT build.
+
+```
+$ ./scripts/bootstrap-cmake-llvm-mingw-cross-ucrt.sh
+$ cd build-llvm-mingw-ucrt
+$ ninja
+```
+
 ## TODO
 
 * [ ] Support compilation on C89 compiler.

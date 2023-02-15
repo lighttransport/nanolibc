@@ -682,6 +682,7 @@ thread_ptr_t thread_create( int (*thread_proc)( void* ), void* user_data, char c
             (LPTHREAD_START_ROUTINE)(uintptr_t) thread_proc, user_data, 0, &thread_id );
         if( !handle ) return NULL;
 
+    #if defined(__MSV_VER__)
         // Yes, this crazy construct with __try and RaiseException is how you name a thread in Visual Studio :S
         if( name && IsDebuggerPresent() )
             {
@@ -699,6 +700,9 @@ thread_ptr_t thread_create( int (*thread_proc)( void* ), void* user_data, char c
                 {
                 }
             }
+    #else // clang, mingw
+        // Do nothing atm.
+    #endif
 
         return (thread_ptr_t) handle;
 
